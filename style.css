@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 60px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-item a {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+
+    color: #363853;
+
+
+}
+
+.nav-item a:hover {
+    color: #FF6838;
+}
+
+.count {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+
+    background-color: #FF7A50;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+    color: white;
+
+    text-align: center;
+}
+
+.signup {
+    width: 110px;
+    height: 45px;
+    background: #FF7A50;
+    box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.signup a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.signup:hover{
+    box-shadow: 0px 22px 50px rgba(255, 104, 56, 0.19);
+    transform: scale(1.05);
+}
+.signup:hover a{
+    color: white;
+}
