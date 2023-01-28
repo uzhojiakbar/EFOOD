@@ -19,6 +19,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 60px;
+
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 1440px;
 }
 
 .nav-items {
@@ -68,28 +74,114 @@ nav {
     text-align: center;
 }
 
-.signup {
-    width: 110px;
+.button {
+    padding: 0 30px;
+    min-width: 110px;
     height: 45px;
     background: #FF7A50;
     box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
     border-radius: 5px;
     transition: .3s;
+    border: 2px solid transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.signup a {
+.button a {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
-.signup:hover{
-    box-shadow: 0px 22px 50px rgba(255, 104, 56, 0.19);
-    transform: scale(1.05);
+.button:hover {
+    background-color: white;
+    border: 2px solid #FF7A50;
 }
-.signup:hover a{
-    color: white;
+
+.button:hover a {
+    color: #FF7A50;
+}
+
+/* header */
+
+.opener {
+    width: 100%;
+    display: flex;
+    height: 600px;
+}
+
+.part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-left {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 78px;
+    text-transform: capitalize;
+
+    /* Primary */
+
+    color: #363853;
+}
+
+.title span {
+    color: #FF7A50;
+}
+
+.desc {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #363853;
+}
+
+.tit-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.btn-white {
+    background-color: transparent;
+    box-shadow: 0px 22px 40px transparent;
+}
+
+.btn-white a {
+    text-decoration-line: underline;
+    color: #363853;
+}
+
+.right{}
+.right img{
+    width: 80%;
 }
