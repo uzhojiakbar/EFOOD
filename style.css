@@ -9,9 +9,16 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body {
+    background-color: #EFEFEF;
+}
+
 .main {
     width: 1440px;
     margin: 0 auto;
+
+    display: grid;
+    gap: 40px;
 }
 
 nav {
@@ -20,7 +27,7 @@ nav {
     justify-content: space-between;
     height: 60px;
 
-    background-color: white;
+    background-color: #EFEFEF;
     position: sticky;
     top: 0;
     left: 0;
@@ -159,7 +166,7 @@ nav {
     color: #363853;
 }
 
-.tit-desc{
+.tit-desc {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -181,7 +188,175 @@ nav {
     color: #363853;
 }
 
-.right{}
-.right img{
+.right {}
+
+.right img {
     width: 80%;
+}
+
+/* popular */
+
+.popular {
+    display: grid;
+    gap: 40px;
+}
+
+.tit-small {
+    font-size: 36px;
+    text-align: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.categeroies,
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.ctg-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 70px;
+    background-color: white;
+    text-transform: capitalize;
+    border-radius: 8px;
+}
+
+.ctg-btn:hover {
+    background: #FF7A50;
+    /* Shadow */
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    color: white;
+}
+
+.buttons .button {
+    color: white;
+}
+
+.buttons .button:hover {
+    color: #FF7A50;
+}
+
+.burger {
+    background-image: url('./imgs/burger1.svg');
+}
+
+.pizza {
+    background-image: url('./imgs/pizza1.svg')
+}
+
+.sandwich {
+    background-image: url('./imgs/Group.svg');
+}
+
+.AsianFood {
+    background-image: url('./imgs/Group\(1\).svg');
+}
+
+.SetMenu {
+    background-image: url('./imgs/dish1.svg');
+}
+
+.cards {}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgs {}
+
+.card-tit {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* Primary */
+
+    color: #363853;
+}
+
+.price {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* Primary */
+
+    color: #363853;
+}
+
+.card .buttons {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.carusel-btns {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.carusel-btns * {
+    cursor: pointer;
+}
+
+.leftbtn {}
+
+.rightbtn img {
+    transform: rotate(180deg);
+}
+
+.pages {
+    display: flex;
+    gap: 15px;
+    align-content: center;
+    justify-content: center;
+}
+
+.pages-item {
+    width: 15px;
+    height:15px;
+    border-radius: 10px;
+    /* background: #FF7A50; */
+    background: #363853;
+    opacity: 0.2;
+}
+
+.pages-item:hover{
+    background-color: #FF7A50;
+    opacity: 1;
+}
+
+.pages-item:nth-child(2){
+    background-color: #FF7A50;
+    opacity: 1;
 }
